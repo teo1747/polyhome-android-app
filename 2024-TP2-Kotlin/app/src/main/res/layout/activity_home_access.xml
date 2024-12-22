@@ -2,41 +2,42 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/lovely_home_line___1_"
     android:orientation="vertical"
-    android:padding="16dp"
-    android:background="@color/background_color">
+    android:padding="16dp">
 
     <!-- Input Field for Username -->
     <EditText
         android:id="@+id/usernameEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter username"
-        android:padding="12dp"
         android:layout_marginBottom="16dp"
-        android:background="@drawable/input_background" />
+        android:background="@drawable/input_background"
+        android:hint="Enter username"
+        android:padding="12dp" />
 
     <!-- Buttons for Granting and Revoking Permission -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center">
+        android:gravity="center"
+        android:orientation="horizontal">
 
         <Button
             android:id="@+id/grantPermissionButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Grant Permission"
             android:layout_marginEnd="8dp"
-            android:backgroundTint="@color/primary" />
+            android:backgroundTint="@color/blue1"
+            android:text="Grant Permission" />
 
         <Button
             android:id="@+id/removePermissionButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:backgroundTint="@color/blue1"
             android:text="Remove Permission"
-            android:backgroundTint="@color/error" />
+            android:textSize="16sp" />
     </LinearLayout>
 
     <!-- List of Users with Access -->
@@ -44,10 +45,12 @@
         android:id="@+id/accessListTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Users with Access"
-        android:textStyle="bold"
         android:layout_marginTop="16dp"
-        android:layout_marginBottom="8dp" />
+        android:layout_marginBottom="8dp"
+        android:text="Users with Access"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
     <ScrollView
         android:layout_width="match_parent"

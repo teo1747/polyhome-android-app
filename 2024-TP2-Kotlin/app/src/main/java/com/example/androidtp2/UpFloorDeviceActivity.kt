@@ -137,7 +137,7 @@ class UpFloorDeviceActivity : AppCompatActivity() {
             sendDeviceCommand(homeId, token, "Light 2.3", "TURN ON")
         }
         findViewById<Button>(R.id.officeLightSwitch1).setOnClickListener {
-            sendDeviceCommand(homeId, token, "Light 2.3Light 2.3", "TURN OFF")
+            sendDeviceCommand(homeId, token, "Light 2.3", "TURN OFF")
         }
 
         findViewById<Button>(R.id.officeShutterSwitch).setOnClickListener {
@@ -184,10 +184,10 @@ class UpFloorDeviceActivity : AppCompatActivity() {
             sendDeviceCommand(homeId, token, "Shutter 2.9", "STOP")
         }
         findViewById<Button>(R.id.bathroomUpLightSwitch).setOnClickListener {
-            sendDeviceCommand(homeId, token, "Light 2.5", "TURN OFF")
+            sendDeviceCommand(homeId, token, "Light 2.5", "TURN ON")
         }
         findViewById<Button>(R.id.bathroomUpLightSwitch1).setOnClickListener {
-            sendDeviceCommand(homeId, token, "Light 2.5", "TURN ON")
+            sendDeviceCommand(homeId, token, "Light 2.5", "TURN OFF")
         }
     }
 
