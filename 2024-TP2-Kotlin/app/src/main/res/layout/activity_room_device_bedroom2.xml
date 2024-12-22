@@ -8,7 +8,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/background_color"
+        android:background="@drawable/palour"
         android:orientation="vertical"
         android:padding="16dp"
         tools:layout_editor_absoluteX="0dp"
@@ -22,7 +22,7 @@
             android:paddingBottom="16dp"
             android:text="Living Room Devices"
             android:textColor="@color/white"
-            android:textSize="24sp"
+            android:textSize="34sp"
             android:textStyle="bold" />
 
         <!-- Device Container -->
@@ -51,26 +51,31 @@
                     android:layout_width="80dp"
                     android:layout_height="80dp"
                     android:contentDescription="Living Room Light"
-                    android:src="@drawable/ic_kitchen_light"
-                    />
+                    android:src="@drawable/ic_kitchen_light" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
+                    android:backgroundTint="@color/blue1"
                     android:text="Living Room Light"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
                 <Button
                     android:id="@+id/bedroom2LightSwitch"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
+                    android:backgroundTint="@color/blue1"
                     android:text="Open" />
+
                 <Button
                     android:id="@+id/bedroom2LightSwitch1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
+                    android:backgroundTint="@color/blue1"
                     android:text="Close" />
             </LinearLayout>
 
@@ -88,33 +93,39 @@
                     android:layout_width="80dp"
                     android:layout_height="80dp"
                     android:contentDescription="Shutter 1"
-                    android:src="@drawable/ic_shutter_open"
-                    />
+                    android:src="@drawable/ic_shutter_open" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
+                    android:backgroundTint="@color/blue1"
                     android:text="Shutter 1"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
 
                 <Button
                     android:id="@+id/bedroom2ShutterSwitch"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
+                    android:backgroundTint="@color/blue1"
                     android:text="Open" />
+
                 <Button
                     android:id="@+id/bedroom2ShutterSwitch1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
+                    android:backgroundTint="@color/blue1"
                     android:text="Close" />
+
                 <Button
                     android:id="@+id/bedroom2ShutterSwitch2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
+                    android:backgroundTint="@color/blue1"
                     android:text="Stop" />
             </LinearLayout>
 
@@ -132,33 +143,39 @@
                     android:layout_width="80dp"
                     android:layout_height="80dp"
                     android:contentDescription="Shutter 2"
-                    android:src="@drawable/ic_shutter_open"
-                    />
+                    android:src="@drawable/ic_shutter_open" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
+                    android:backgroundTint="@color/blue1"
                     android:text="Shutter 2"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
 
                 <Button
                     android:id="@+id/bedroom2Shutter2Switch"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
+                    android:backgroundTint="@color/blue1"
                     android:text="Open" />
+
                 <Button
                     android:id="@+id/bedroom2Shutter2Switch1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
+                    android:backgroundTint="@color/blue1"
                     android:text="Close" />
+
                 <Button
                     android:id="@+id/bedroom2Shutter2Switch2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
+                    android:backgroundTint="@color/blue1"
                     android:text="Stop" />
             </LinearLayout>
 

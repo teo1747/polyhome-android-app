@@ -2,84 +2,106 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/lovely_home_line___1_"
     android:padding="16dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
         android:gravity="center"
+        android:orientation="vertical"
         android:padding="8dp">
 
         <!-- First Row -->
+        <EditText
+            android:id="@+id/editTextText3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:text="Down Floor"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="34sp" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity=""
-            android:layout_marginBottom="16dp">
+            android:layout_marginBottom="16dp"
+            android:gravity="center
+"
+            android:orientation="horizontal">
 
             <!-- Garage -->
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
+                android:layout_margin="8dp"
                 android:gravity="center"
-                android:layout_margin="8dp">
+                android:orientation="vertical">
+
                 <ImageView
                     android:id="@+id/iconGarage"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:src="@drawable/ic_garage"
-                    android:contentDescription="Garage" />
+                    android:contentDescription="Garage"
+                    android:src="@drawable/garageicon_" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:gravity="center"
                     android:text="Garage"
-                    android:textSize="14sp"
-                    android:gravity="center" />
+                    android:textColor="@color/white"
+                    android:textSize="24sp" />
             </LinearLayout>
 
             <!-- Entry -->
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
+                android:layout_margin="8dp"
                 android:gravity="center"
-                android:layout_margin="8dp">
+                android:orientation="vertical">
+
                 <ImageView
                     android:id="@+id/iconEntry"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:src="@drawable/ic_entry"
-                    android:contentDescription="Entry" />
+                    android:contentDescription="Entry"
+                    android:src="@drawable/neonentry" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:gravity="center"
                     android:text="Entry"
-                    android:textSize="14sp"
-                    android:gravity="center" />
+                    android:textColor="@color/white"
+                    android:textSize="24sp" />
             </LinearLayout>
 
             <!-- Living Room -->
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
+                android:layout_margin="8dp"
                 android:gravity="center"
-                android:layout_margin="8dp">
+                android:orientation="vertical">
+
                 <ImageView
                     android:id="@+id/iconLivingRoom"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:src="@drawable/ic_living_room"
-                    android:contentDescription="Living Room" />
+                    android:contentDescription="Living Room"
+                    android:src="@drawable/livingroom" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:gravity="center"
                     android:text="Living Room"
-                    android:textSize="14sp"
-                    android:gravity="center" />
+                    android:textColor="@color/white"
+                    android:textSize="24sp" />
             </LinearLayout>
         </LinearLayout>
 
@@ -87,71 +109,80 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity=""
-            android:layout_marginBottom="16dp">
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:orientation="horizontal">
 
             <!-- Kitchen -->
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
+                android:layout_margin="8dp"
                 android:gravity="center"
-                android:layout_margin="8dp">
+                android:orientation="vertical">
+
                 <ImageView
                     android:id="@+id/iconKitchen"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:src="@drawable/ic_kitchen"
-                    android:contentDescription="Kitchen" />
+                    android:contentDescription="Kitchen"
+                    android:src="@drawable/kitchenneon" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:gravity="center"
                     android:text="Kitchen"
-                    android:textSize="14sp"
-                    android:gravity="center" />
+                    android:textColor="@color/white"
+                    android:textSize="24sp" />
             </LinearLayout>
 
             <!-- Dining Room -->
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
+                android:layout_margin="8dp"
                 android:gravity="center"
-                android:layout_margin="8dp">
+                android:orientation="vertical">
+
                 <ImageView
                     android:id="@+id/iconDiningRoom"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:src="@drawable/ic_dining"
-                    android:contentDescription="Dining Room" />
+                    android:contentDescription="Dining Room"
+                    android:src="@drawable/eat" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:gravity="center"
                     android:text="Dining Room"
-                    android:textSize="14sp"
-                    android:gravity="center" />
+                    android:textColor="@color/white"
+                    android:textSize="24sp" />
             </LinearLayout>
 
             <!-- Laundry -->
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
+                android:layout_margin="8dp"
                 android:gravity="center"
-                android:layout_margin="8dp">
+                android:orientation="vertical">
+
                 <ImageView
                     android:id="@+id/iconLaundry"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:src="@drawable/ic_laundry"
-                    android:contentDescription="Laundry" />
+                    android:contentDescription="Laundry"
+                    android:src="@drawable/wash" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:gravity="center"
                     android:text="Laundry"
-                    android:textSize="14sp"
-                    android:gravity="center" />
+                    android:textColor="@color/white"
+                    android:textSize="24sp" />
             </LinearLayout>
         </LinearLayout>
 
@@ -159,49 +190,55 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="">
+            android:gravity="center"
+            android:orientation="horizontal">
 
             <!-- Playroom -->
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:gravity="center"
-                android:layout_margin="8dp">
+                android:layout_margin="8dp"
+                android:gravity=""
+                android:orientation="vertical">
+
                 <ImageView
                     android:id="@+id/iconPlayroom"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:src="@drawable/ic_game"
-                    android:contentDescription="Playroom" />
+                    android:contentDescription="Playroom"
+                    android:src="@drawable/lever" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:gravity="center"
                     android:text="Playroom"
-                    android:textSize="14sp"
-                    android:gravity="center" />
+                    android:textColor="@color/white"
+                    android:textSize="24sp" />
             </LinearLayout>
 
             <!-- Bathroom -->
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
+                android:layout_margin="8dp"
                 android:gravity="center"
-                android:layout_margin="8dp">
+                android:orientation="vertical">
+
                 <ImageView
                     android:id="@+id/iconBathroom"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:src="@drawable/ic_bathroom"
-                    android:contentDescription="Bathroom" />
+                    android:contentDescription="Bathroom"
+                    android:src="@drawable/bath" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:gravity="center"
                     android:text="Bathroom"
-                    android:textSize="14sp"
-                    android:gravity="center" />
+                    android:textColor="@color/white"
+                    android:textSize="24sp" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>

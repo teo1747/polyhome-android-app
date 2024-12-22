@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">My House</string>
+    <item name="colorPrimary" type="color">@color/white</item>
+</resources>

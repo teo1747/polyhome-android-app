@@ -2,54 +2,70 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/lovely_home_line___1_"
     android:padding="16dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
         android:gravity="center"
+        android:orientation="vertical"
         android:padding="8dp">
 
         <!-- Lights Section -->
+        <EditText
+            android:id="@+id/editTextText2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:text="Down Floor"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="34sp" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:layout_marginBottom="24dp"
             android:gravity="center"
-            android:layout_marginBottom="24dp">
+            android:orientation="horizontal">
 
             <ImageView
                 android:id="@+id/downFloorLightsIcon"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
-                android:src="@drawable/ic_kitchen_light"
-                android:contentDescription="Lights" />
+                android:contentDescription="Lights"
+                android:src="@drawable/ic_kitchen_light" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
+                android:layout_marginStart="16dp"
                 android:gravity="center"
-                android:layout_marginStart="16dp">
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/downFloorLightsText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Downfloor Lights"
-                    android:textSize="16sp"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
                     android:textStyle="bold" />
+
                 <Button
                     android:id="@+id/downFloorLightsOnButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:backgroundTint="@color/blue1"
                     android:text="Turn On" />
 
                 <Button
                     android:id="@+id/downFloorLightsOffButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:backgroundTint="@color/blue1"
                     android:text="Turn Off" />
             </LinearLayout>
         </LinearLayout>
@@ -58,51 +74,55 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:layout_marginBottom="24dp"
             android:gravity="center"
-            android:layout_marginBottom="24dp">
+            android:orientation="horizontal">
 
             <ImageView
                 android:id="@+id/downFloorShuttersIcon"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
-                android:src="@drawable/ic_shutter"
-                android:contentDescription="Shutters" />
+                android:contentDescription="Shutters"
+                android:src="@drawable/ic_shutter" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
+                android:layout_marginStart="16dp"
                 android:gravity="center"
-                android:layout_marginStart="16dp">
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/downFloorShuttersText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Downfloor Shutters"
-                    android:textSize="16sp"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
                     android:textStyle="bold" />
 
                 <Button
                     android:id="@+id/downFloorShuttersOpenButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:backgroundTint="@color/blue1"
                     android:text="Open" />
 
                 <Button
                     android:id="@+id/downFloorShuttersCloseButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Close"
-                    android:layout_marginTop="8dp" />
+                    android:layout_marginTop="8dp"
+                    android:backgroundTint="@color/blue1"
+                    android:text="Close" />
 
                 <Button
                     android:id="@+id/downFloorShuttersStopButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Stop"
-                    android:layout_marginTop="8dp" />
+                    android:layout_marginTop="8dp"
+                    android:backgroundTint="@color/blue1"
+                    android:text="Stop" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>

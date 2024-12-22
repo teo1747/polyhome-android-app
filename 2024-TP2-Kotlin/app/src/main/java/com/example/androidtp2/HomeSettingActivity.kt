@@ -2,6 +2,7 @@ package com.example.androidtp2
 
 import android.os.Bundle
 import android.widget.Button
+import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
@@ -136,6 +137,53 @@ class HomeSettingActivity : AppCompatActivity() {
             sendDeviceCommand(homeId, token, "Shutter 1.9", "STOP")
             sendDeviceCommand(homeId, token, "Shutter 1.10", "STOP")
             sendDeviceCommand(homeId, token, "Shutter 1.11", "STOP")
+        }
+
+        // Specific Light Control by ID
+        val lightIdInput = findViewById<EditText>(R.id.lightIdInput)
+        findViewById<Button>(R.id.turnOnLightByIdButton).setOnClickListener {
+            val lightId = lightIdInput.text.toString().trim()
+            if (lightId.isNotEmpty()) {
+                sendDeviceCommand(homeId, token, lightId, "TURN ON")
+            } else {
+                Toast.makeText(this, "Please enter a valid Light ID", Toast.LENGTH_SHORT).show()
+            }
+        }
+
+        findViewById<Button>(R.id.turnOffLightByIdButton).setOnClickListener {
+            val lightId = lightIdInput.text.toString().trim()
+            if (lightId.isNotEmpty()) {
+                sendDeviceCommand(homeId, token, lightId, "TURN OFF")
+            } else {
+                Toast.makeText(this, "Please enter a valid Light ID", Toast.LENGTH_SHORT).show()
+            }
+        }
+
+        // Specific Shutter Control by ID
+        val shutterIdInput = findViewById<EditText>(R.id.shutterIdInput)
+        findViewById<Button>(R.id.openShutterByIdButton).setOnClickListener {
+            val shutterId = shutterIdInput.text.toString().trim()
+            if (shutterId.isNotEmpty()) {
+                sendDeviceCommand(homeId, token, shutterId, "OPEN")
+            } else {
+                Toast.makeText(this, "Please enter a valid Shutter ID", Toast.LENGTH_SHORT).show()
+            }
+        }
+        findViewById<Button>(R.id.closeShutterByIdButton).setOnClickListener {
+            val shutterId = shutterIdInput.text.toString().trim()
+            if (shutterId.isNotEmpty()) {
+                sendDeviceCommand(homeId, token, shutterId, "CLOSE")
+            } else {
+                Toast.makeText(this, "Please enter a valid Shutter ID", Toast.LENGTH_SHORT).show()
+            }
+        }
+        findViewById<Button>(R.id.stopShutterByIdButton).setOnClickListener {
+            val shutterId = shutterIdInput.text.toString().trim()
+            if (shutterId.isNotEmpty()) {
+                sendDeviceCommand(homeId, token, shutterId, "STOP")
+            } else {
+                Toast.makeText(this, "Please enter a valid Shutter ID", Toast.LENGTH_SHORT).show()
+            }
         }
     }
 

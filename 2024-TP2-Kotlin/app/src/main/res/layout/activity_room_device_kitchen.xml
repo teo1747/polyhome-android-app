@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:backgroundTint="@color/blue1">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/background_color"
+        android:background="@drawable/kitchen__1_"
         android:orientation="vertical"
         android:padding="16dp"
         tools:layout_editor_absoluteX="0dp"
@@ -17,12 +18,13 @@
         <!-- Title for the Room -->
         <TextView
             android:id="@+id/roomTitle"
-            android:layout_width="wrap_content"
+            android:layout_width="382dp"
             android:layout_height="wrap_content"
             android:paddingBottom="16dp"
             android:text="Kitchen Devices"
+            android:textAlignment="center"
             android:textColor="@color/white"
-            android:textSize="24sp"
+            android:textSize="34sp"
             android:textStyle="bold" />
 
         <!-- Device Container -->
@@ -51,27 +53,30 @@
                     android:layout_width="80dp"
                     android:layout_height="80dp"
                     android:contentDescription="Kitchen Light"
-                    android:src="@drawable/ic_kitchen_light"
-                    />
+                    android:src="@drawable/ic_kitchen_light" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:text="Kitchen Light"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
 
                 <Button
                     android:id="@+id/kitchenLightSwitch"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
+                    android:backgroundTint="@color/blue1"
                     android:text="On" />
+
                 <Button
                     android:id="@+id/kitchenLightSwitch1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
+                    android:backgroundTint="@color/blue1"
                     android:text="Off" />
             </LinearLayout>
 
@@ -89,33 +94,38 @@
                     android:layout_width="80dp"
                     android:layout_height="80dp"
                     android:contentDescription="Shutter 1"
-                    android:src="@drawable/ic_shutter_open"
-                    />
+                    android:src="@drawable/ic_shutter_open" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:text="Shutter 1"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
 
                 <Button
                     android:id="@+id/Kitchenshutter1Button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
+                    android:backgroundTint="@color/blue1"
                     android:text="Open" />
+
                 <Button
                     android:id="@+id/Kitchenshutter1Button1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
+                    android:backgroundTint="@color/blue1"
                     android:text="Close" />
+
                 <Button
                     android:id="@+id/Kitchenshutter1Button2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
+                    android:backgroundTint="@color/blue1"
                     android:text="Stop" />
             </LinearLayout>
 
@@ -133,27 +143,30 @@
                     android:layout_width="80dp"
                     android:layout_height="80dp"
                     android:contentDescription="Shutter 2"
-                    android:src="@drawable/ic_shutter_open"
-                    />
+                    android:src="@drawable/ic_shutter_open" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:text="Shutter 2"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
 
                 <Button
                     android:id="@+id/Kitchenshutter2Button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
+                    android:backgroundTint="@color/blue1"
                     android:text="Open" />
+
                 <Button
                     android:id="@+id/Kitchenshutter2Button1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
+                    android:backgroundTint="@color/blue1"
                     android:text="Close" />
 
                 <Button
@@ -161,6 +174,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
+                    android:backgroundTint="@color/blue1"
                     android:text="Stop" />
 
             </LinearLayout>
@@ -179,33 +193,38 @@
                     android:layout_width="80dp"
                     android:layout_height="80dp"
                     android:contentDescription="Shutter 3"
-                    android:src="@drawable/ic_shutter_open"
-                    />
+                    android:src="@drawable/ic_shutter_open" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:text="Shutter 3"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
 
                 <Button
                     android:id="@+id/Kitchenshutter3Button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
+                    android:backgroundTint="@color/blue1"
                     android:text="Open" />
+
                 <Button
                     android:id="@+id/Kitchenshutter3Button1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
+                    android:backgroundTint="@color/blue1"
                     android:text="Close" />
+
                 <Button
                     android:id="@+id/Kitchenshutter3Button2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
+                    android:backgroundTint="@color/blue1"
                     android:text="Stop" />
             </LinearLayout>
 

@@ -39,7 +39,7 @@ class HomePropertyActivity : AppCompatActivity() {
                     loadFragment(UpFloorFragment(), homeId, token)
                     true
                 }
-                R.id.navigation_settings -> {
+                R.id.navigation_home_settings -> {
                     loadFragment(SettingsFragment(), homeId, token)
                     true
                 }
