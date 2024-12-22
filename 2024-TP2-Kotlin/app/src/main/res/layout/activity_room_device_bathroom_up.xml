@@ -4,72 +4,72 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <LinearLayout
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/lovely_home_line___1_"
         android:orientation="vertical"
-        android:padding="16dp">
+        android:padding="16dp"
+        android:background="@color/background_color">
 
         <!-- Title for the Room -->
         <TextView
             android:id="@+id/roomTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingBottom="16dp"
             android:text="Laundry Room Devices"
-            android:textColor="@color/white"
             android:textSize="24sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:paddingBottom="16dp"
+            android:textColor="@color/white" />
 
         <!-- Device Container -->
         <GridLayout
             android:id="@+id/deviceContainer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:alignmentMode="alignMargins"
-            android:background="@drawable/device_container_background"
             android:columnCount="2"
+            android:rowCount="2"
+            android:alignmentMode="alignMargins"
             android:padding="8dp"
-            android:rowCount="2">
+            android:layout_marginTop="16dp"
+            android:background="@drawable/device_container_background">
 
             <!-- Device 1: Laundry Light -->
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
-                android:layout_margin="8dp"
+                android:orientation="vertical"
                 android:gravity="center"
-                android:orientation="vertical">
+                android:layout_margin="8dp">
 
                 <ImageView
                     android:id="@+id/laundryLightIcon"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
+                    android:src="@drawable/ic_kitchen_light"
                     android:contentDescription="Laundry Light"
-                    android:src="@drawable/ic_kitchen_light" />
+                    />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
                     android:text="Laundry Light"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/white"
+                    android:layout_marginTop="8dp" />
 
                 <Button
                     android:id="@+id/bathroomUpLightSwitch"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:text="On" />
-
+                    android:text="On"
+                    android:layout_marginTop="8dp" />
                 <Button
                     android:id="@+id/bathroomUpLightSwitch1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:text="Off" />
+                    android:text="Off"
+                    android:layout_marginTop="8dp" />
             </LinearLayout>
 
             <!-- Device 2: Shutter -->
@@ -77,44 +77,43 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
-                android:layout_margin="8dp"
+                android:orientation="vertical"
                 android:gravity="center"
-                android:orientation="vertical">
+                android:layout_margin="8dp">
 
                 <ImageView
                     android:id="@+id/laundryShutterIcon"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
+                    android:src="@drawable/ic_shutter_open"
                     android:contentDescription="Laundry Shutter"
-                    android:src="@drawable/ic_shutter_open" />
+                    />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
                     android:text="Laundry Shutter"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/white"
+                    android:layout_marginTop="8dp" />
 
                 <Button
                     android:id="@+id/bathroomUpShutterButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:text="Open" />
-
+                    android:text="Open"
+                    android:layout_marginTop="8dp" />
                 <Button
                     android:id="@+id/bathroomUpShutterButton1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:text="Close" />
-
+                    android:text="Close"
+                    android:layout_marginTop="8dp" />
                 <Button
                     android:id="@+id/bathroomUpShutterButton2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:text="Stop" />
+                    android:text="Stop"
+                    android:layout_marginTop="8dp" />
             </LinearLayout>
 
         </GridLayout>

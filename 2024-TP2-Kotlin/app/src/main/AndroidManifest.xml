@@ -21,13 +21,22 @@
             android:name=".RoomDeviceActivity"
             android:exported="false"/>
         <activity
+            android:name=".UpFloorSettingActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".DownFloorSettingActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".HomeSettingActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".UpFloorDeviceActivity"
+            android:exported="false"/>
+        <activity
             android:name=".HomePropertyActivity"
             android:exported="false" />
         <activity
             android:name=".MainHouseAccessActivity"
-            android:exported="false" />
-        <activity
-            android:name=".UpFloorDeviceActivity"
             android:exported="false" />
         <activity
             android:name=".RegisterActivity"

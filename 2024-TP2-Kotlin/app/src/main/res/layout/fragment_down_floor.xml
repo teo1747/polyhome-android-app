@@ -7,86 +7,79 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
         android:orientation="vertical"
+        android:gravity="center"
         android:padding="8dp">
 
         <!-- First Row -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:gravity="center
-"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:gravity=""
+            android:layout_marginBottom="16dp">
 
             <!-- Garage -->
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
+                android:orientation="vertical"
                 android:gravity="center"
-                android:orientation="vertical">
-
+                android:layout_margin="8dp">
                 <ImageView
                     android:id="@+id/iconGarage"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:contentDescription="Garage"
-                    android:src="@drawable/ic_garage" />
-
+                    android:src="@drawable/ic_garage"
+                    android:contentDescription="Garage" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
                     android:text="Garage"
-                    android:textSize="20sp" />
+                    android:textSize="14sp"
+                    android:gravity="center" />
             </LinearLayout>
 
             <!-- Entry -->
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
+                android:orientation="vertical"
                 android:gravity="center"
-                android:orientation="vertical">
-
+                android:layout_margin="8dp">
                 <ImageView
                     android:id="@+id/iconEntry"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:contentDescription="Entry"
-                    android:src="@drawable/ic_entry" />
-
+                    android:src="@drawable/ic_entry"
+                    android:contentDescription="Entry" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
                     android:text="Entry"
-                    android:textSize="20sp" />
+                    android:textSize="14sp"
+                    android:gravity="center" />
             </LinearLayout>
 
             <!-- Living Room -->
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
+                android:orientation="vertical"
                 android:gravity="center"
-                android:orientation="vertical">
-
+                android:layout_margin="8dp">
                 <ImageView
                     android:id="@+id/iconLivingRoom"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:contentDescription="Living Room"
-                    android:src="@drawable/design_sans_titre__1_" />
-
+                    android:src="@drawable/ic_living_room"
+                    android:contentDescription="Living Room" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
                     android:text="Living Room"
-                    android:textSize="20sp" />
+                    android:textSize="14sp"
+                    android:gravity="center" />
             </LinearLayout>
         </LinearLayout>
 
@@ -94,77 +87,71 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:gravity="center"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:gravity=""
+            android:layout_marginBottom="16dp">
 
             <!-- Kitchen -->
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
+                android:orientation="vertical"
                 android:gravity="center"
-                android:orientation="vertical">
-
+                android:layout_margin="8dp">
                 <ImageView
                     android:id="@+id/iconKitchen"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:contentDescription="Kitchen"
-                    android:src="@drawable/design_sans_titre__5_" />
-
+                    android:src="@drawable/ic_kitchen"
+                    android:contentDescription="Kitchen" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
                     android:text="Kitchen"
-                    android:textSize="20sp" />
+                    android:textSize="14sp"
+                    android:gravity="center" />
             </LinearLayout>
 
             <!-- Dining Room -->
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
+                android:orientation="vertical"
                 android:gravity="center"
-                android:orientation="vertical">
-
+                android:layout_margin="8dp">
                 <ImageView
                     android:id="@+id/iconDiningRoom"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:contentDescription="Dining Room"
-                    android:src="@drawable/ic_dining" />
-
+                    android:src="@drawable/ic_dining"
+                    android:contentDescription="Dining Room" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
                     android:text="Dining Room"
-                    android:textSize="20sp" />
+                    android:textSize="14sp"
+                    android:gravity="center" />
             </LinearLayout>
 
             <!-- Laundry -->
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
+                android:orientation="vertical"
                 android:gravity="center"
-                android:orientation="vertical">
-
+                android:layout_margin="8dp">
                 <ImageView
                     android:id="@+id/iconLaundry"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:contentDescription="Laundry"
-                    android:src="@drawable/laundary" />
-
+                    android:src="@drawable/ic_laundry"
+                    android:contentDescription="Laundry" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
                     android:text="Laundry"
-                    android:textSize="20sp" />
+                    android:textSize="14sp"
+                    android:gravity="center" />
             </LinearLayout>
         </LinearLayout>
 
@@ -172,53 +159,49 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:gravity="">
 
             <!-- Playroom -->
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:gravity=""
-                android:orientation="vertical">
-
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_margin="8dp">
                 <ImageView
                     android:id="@+id/iconPlayroom"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:contentDescription="Playroom"
-                    android:src="@drawable/ic_game" />
-
+                    android:src="@drawable/ic_game"
+                    android:contentDescription="Playroom" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
                     android:text="Playroom"
-                    android:textSize="20sp" />
+                    android:textSize="14sp"
+                    android:gravity="center" />
             </LinearLayout>
 
             <!-- Bathroom -->
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
+                android:orientation="vertical"
                 android:gravity="center"
-                android:orientation="vertical">
-
+                android:layout_margin="8dp">
                 <ImageView
                     android:id="@+id/iconBathroom"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:contentDescription="Bathroom"
-                    android:src="@drawable/design_sans_titre__7_" />
-
+                    android:src="@drawable/ic_bathroom"
+                    android:contentDescription="Bathroom" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
                     android:text="Bathroom"
-                    android:textSize="20sp" />
+                    android:textSize="14sp"
+                    android:gravity="center" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>

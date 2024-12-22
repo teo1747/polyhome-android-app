@@ -4,74 +4,72 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <LinearLayout
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/chop"
         android:orientation="vertical"
-        android:padding="16dp">
+        android:padding="16dp"
+        android:background="@color/background_color">
 
         <!-- Title for the Room -->
         <TextView
             android:id="@+id/roomTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingBottom="16dp"
             android:text="Dining Room Devices"
-            android:textColor="@color/material_dynamic_neutral100"
-            android:textSize="34sp"
-            android:textStyle="bold" />
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:paddingBottom="16dp"
+            android:textColor="@color/white" />
 
         <!-- Device Container -->
         <GridLayout
             android:id="@+id/deviceContainer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:alignmentMode="alignMargins"
-            android:background="@drawable/device_container_background"
             android:columnCount="2"
+            android:rowCount="2"
+            android:alignmentMode="alignMargins"
             android:padding="8dp"
-            android:rowCount="2">
+            android:layout_marginTop="16dp"
+            android:background="@drawable/device_container_background">
 
             <!-- Device 1: Dining Light -->
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
-                android:layout_margin="8dp"
+                android:orientation="vertical"
                 android:gravity="center"
-                android:orientation="vertical">
+                android:layout_margin="8dp">
 
                 <ImageView
                     android:id="@+id/diningLightIcon"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
+                    android:src="@drawable/ic_kitchen_light"
                     android:contentDescription="Dining Light"
-                    android:src="@drawable/ic_kitchen_light" />
+                     />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
                     android:text="Dining Light"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/white"
+                    android:layout_marginTop="8dp" />
 
                 <Button
                     android:id="@+id/dininglightButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:backgroundTint="@color/blue1"
-                    android:text="On" />
-
+                    android:text="On"
+                    android:layout_marginTop="8dp" />
                 <Button
                     android:id="@+id/dininglightButton1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:backgroundTint="@color/blue1"
-                    android:text="Off" />
+                    android:text="Off"
+                    android:layout_marginTop="8dp" />
 
             </LinearLayout>
 
@@ -80,48 +78,43 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
-                android:layout_margin="8dp"
+                android:orientation="vertical"
                 android:gravity="center"
-                android:orientation="vertical">
+                android:layout_margin="8dp">
 
                 <ImageView
                     android:id="@+id/diningShutterIcon"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:contentDescription="Dining Shutter"
-                    android:src="@drawable/ic_shutter_open" />
+                    android:src="@drawable/ic_shutter_open"
+                    android:contentDescription="Dining Shutter"/>
 
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
                     android:text="Dining Shutter 1"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/white"
+                    android:layout_marginTop="8dp" />
 
                 <Button
                     android:id="@+id/diningShutterButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:backgroundTint="@color/blue1"
-                    android:text="Open" />
-
+                    android:text="Open"
+                    android:layout_marginTop="8dp" />
                 <Button
                     android:id="@+id/diningShutterButton1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:backgroundTint="@color/blue1"
-                    android:text="Close" />
-
+                    android:text="Close"
+                    android:layout_marginTop="8dp" />
                 <Button
                     android:id="@+id/diningShutterButton2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:backgroundTint="@color/blue1"
-                    android:text="Stop" />
+                    android:text="Stop"
+                    android:layout_marginTop="8dp" />
             </LinearLayout>
 
             <!-- Device 3: Shutter -->
@@ -129,48 +122,43 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
-                android:layout_margin="8dp"
+                android:orientation="vertical"
                 android:gravity="center"
-                android:orientation="vertical">
+                android:layout_margin="8dp">
 
                 <ImageView
                     android:id="@+id/diningShutterIcon1"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:contentDescription="Dining Shutter"
-                    android:src="@drawable/ic_shutter_open" />
+                    android:src="@drawable/ic_shutter_open"
+                    android:contentDescription="Dining Shutter"/>
 
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
                     android:text="Dining Shutter 2"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/white"
+                    android:layout_marginTop="8dp" />
 
                 <Button
                     android:id="@+id/diningShutter1Button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:backgroundTint="@color/blue1"
-                    android:text="Open" />
-
+                    android:text="Open"
+                    android:layout_marginTop="8dp" />
                 <Button
                     android:id="@+id/diningShutter1Button1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:backgroundTint="@color/blue1"
-                    android:text="Close" />
-
+                    android:text="Close"
+                    android:layout_marginTop="8dp" />
                 <Button
                     android:id="@+id/diningShutter1Button2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:backgroundTint="@color/blue1"
-                    android:text="Stop" />
+                    android:text="Stop"
+                    android:layout_marginTop="8dp" />
             </LinearLayout>
 
             <!-- Device 4: Shutter -->
@@ -178,48 +166,43 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
-                android:layout_margin="8dp"
+                android:orientation="vertical"
                 android:gravity="center"
-                android:orientation="vertical">
+                android:layout_margin="8dp">
 
                 <ImageView
                     android:id="@+id/diningShutterIcon2"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:contentDescription="Dining Shutter"
-                    android:src="@drawable/ic_shutter_open" />
+                    android:src="@drawable/ic_shutter_open"
+                    android:contentDescription="Dining Shutter"/>
 
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
                     android:text="Dining Shutter 3"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/white"
+                    android:layout_marginTop="8dp" />
 
                 <Button
                     android:id="@+id/diningShutter2Button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:backgroundTint="@color/blue1"
-                    android:text="Open" />
-
+                    android:text="Open"
+                    android:layout_marginTop="8dp" />
                 <Button
                     android:id="@+id/diningShutter2Button1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:backgroundTint="@color/blue1"
-                    android:text="Close" />
-
+                    android:text="Close"
+                    android:layout_marginTop="8dp" />
                 <Button
                     android:id="@+id/diningShutter2Button2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:backgroundTint="@color/blue1"
-                    android:text="Stop" />
+                    android:text="Stop"
+                    android:layout_marginTop="8dp" />
             </LinearLayout>
 
         </GridLayout>

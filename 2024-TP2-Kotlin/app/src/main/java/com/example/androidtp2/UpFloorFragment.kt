@@ -35,7 +35,7 @@ class UpFloorFragment : Fragment() {
         val bathroomIcon = view.findViewById<ImageView>(R.id.iconUpBathroom)
         val hallwayIcon = view.findViewById<ImageView>(R.id.iconHallway)
         val officeIcon = view.findViewById<ImageView>(R.id.iconOffice)
-        val bedroom3Icon = view.findViewById<ImageView>(R.id.iconTerrace)
+        val bedroom3Icon  = view.findViewById<ImageView>(R.id.iconTerrace)
 
         // Set click listeners to open RoomDeviceActivity
         bedroom1Icon.setOnClickListener { openRoomDeviceActivity("Bedroom 1") }

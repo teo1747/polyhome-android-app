@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:backgroundTint="@color/blue1">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/palour"
+        android:background="@color/background_color"
         android:orientation="vertical"
         android:padding="16dp"
         tools:layout_editor_absoluteX="0dp"
@@ -23,7 +22,7 @@
             android:paddingBottom="16dp"
             android:text="Living Room Devices"
             android:textColor="@color/white"
-            android:textSize="34sp"
+            android:textSize="24sp"
             android:textStyle="bold" />
 
         <!-- Device Container -->
@@ -52,7 +51,8 @@
                     android:layout_width="80dp"
                     android:layout_height="80dp"
                     android:contentDescription="Living Room Light"
-                    android:src="@drawable/ic_kitchen_light" />
+                    android:src="@drawable/ic_kitchen_light"
+                    />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -60,21 +60,17 @@
                     android:layout_marginTop="8dp"
                     android:text="Living Room Light"
                     android:textColor="@color/white" />
-
                 <Button
                     android:id="@+id/livingRoomLightSwitch"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:backgroundTint="@color/blue1"
                     android:text="Open" />
-
                 <Button
                     android:id="@+id/livingRoomLightSwitch1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:backgroundTint="@color/blue1"
                     android:text="Close" />
             </LinearLayout>
 
@@ -92,7 +88,8 @@
                     android:layout_width="80dp"
                     android:layout_height="80dp"
                     android:contentDescription="Shutter 1"
-                    android:src="@drawable/ic_shutter_open" />
+                    android:src="@drawable/ic_shutter_open"
+                     />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -106,15 +103,12 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:backgroundTint="@color/blue1"
                     android:text="Open" />
-
                 <Button
                     android:id="@+id/livingshutter1Button1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:backgroundTint="@color/blue1"
                     android:text="Close" />
 
                 <Button
@@ -122,7 +116,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:backgroundTint="@color/blue1"
                     android:text="Stop" />
             </LinearLayout>
 
@@ -140,7 +133,8 @@
                     android:layout_width="80dp"
                     android:layout_height="80dp"
                     android:contentDescription="Shutter 2"
-                    android:src="@drawable/ic_shutter_open" />
+                    android:src="@drawable/ic_shutter_open"
+                     />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -154,15 +148,12 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:backgroundTint="@color/blue1"
                     android:text="Open" />
-
                 <Button
                     android:id="@+id/livingshutter2Button1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:backgroundTint="@color/blue1"
                     android:text="Close" />
 
                 <Button
@@ -170,7 +161,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:backgroundTint="@color/blue1"
                     android:text="Stop" />
             </LinearLayout>
 
